@@ -1,9 +1,9 @@
 services:
   firebase:
-    port: 4000
+    port: 5001
     image: reploy/firebase
     serve:
       - cd functions
       - npm install
       - cd ..
-      - firebase emulators:start --only ui
+      - firebase emulators:start --only functions
