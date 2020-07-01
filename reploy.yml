@@ -5,4 +5,5 @@ services:
     serve:
       - cd functions
       - npm install
+      - firebase init emulators all 
       - firebase emulators:start --only ui
