@@ -3,4 +3,6 @@ services:
     port: 4000
     image: reploy/firebase
     serve:
-      - firebase emulators:start --only functions
+      - cd functions
+      - npm install
+      - firebase emulators:start --only ui
