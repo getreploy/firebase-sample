@@ -1,0 +1,6 @@
+services:
+  firebase:
+    port: 4000
+    image: reploy/firebase
+    serve:
+      - firebase emulators:start --only functions
