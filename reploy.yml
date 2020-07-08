@@ -1,10 +1,14 @@
 services:
   firebase:
     ports:
-      - 4000
-      - 8080
-      - 5001
-      - 9000
+      - port: 4000
+	name: ui
+      - port: 8080
+	name: FIRESTORE
+      - port: 5001
+	name: functions
+      - port: 9000
+	name: database
     image: reploy/firebase
     serve:
       - firebase emulators:start --only functions
