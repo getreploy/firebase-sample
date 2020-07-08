@@ -1,6 +1,10 @@
 services:
   firebase:
-    port: 8080
+    ports:
+      - 4000
+      - 8080
+      - 5001
+      - 9000
     image: reploy/firebase
     serve:
-      - firebase emulators:start --only firestore
+      - firebase emulators:start --only functions
