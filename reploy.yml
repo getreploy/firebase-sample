@@ -11,4 +11,4 @@ services:
         name: database
     image: reploy/firebase
     serve:
-      - firebase emulators:start --only functions
+      - firebase emulators:start
